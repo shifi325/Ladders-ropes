@@ -1,0 +1,203 @@
+﻿#ask1{
+    display:none;
+    z-index:3;
+}
+audio {
+    opacity: 0;
+    visibility: collapse;
+    position: absolute;
+}
+
+body {
+    position: sticky;
+    background-color: #D6E5E9;
+    align-items: center;
+    text-align: center;
+}
+
+ul {
+    position: fixed;
+    top: 8vh;
+    text-align: right;
+    right: 0.5vw;
+}
+
+li {
+    margin: 1.7vh;
+    list-style-type: none;
+    font-size: 2.2vw;
+}
+
+#menu {
+    border: none;
+    height: 8.5vh;
+    width: 8.5vh;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+#level {
+    display: none;
+}
+
+.menu {
+    background-color: #297D86;
+    color: #D6E5E9;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    height: 100vh;
+    left: 84vw;
+    width: 16vw;
+    display: none;
+}
+
+    .menu a {
+        color: #D6E5E9;
+        text-decoration: none;
+    }
+
+.back {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.buttonE {
+    font-size: 1.5vw;
+    background-color: #297D86;
+    color: white;
+    text-align: center;
+    width: 14vw;
+    height: 3vw;
+    border: none;
+    border-radius: 15px;
+    margin: 1vh;
+}
+
+.backg {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 0vw;
+    width: 0vw;
+    border: none;
+    bottom: 0px;
+}
+
+div {
+    position: relative;
+    left: 1%;
+    top: 1%;
+    border: solid 0.5px black;
+    width: 6vw;
+    height: 9.5vh;
+    font-size: x-large;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.enterance {
+    position: relative;
+    margin: auto;
+    top: 2vh;
+    width: 26vw;
+    padding: 1vw;
+    height: fit-content;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+fieldset {
+    border: 2px solid #297D86;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #297D86;
+    font-size: 50px;
+    top: 3vh;
+}
+
+.home {
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-color: #D6E5E9;
+}
+
+input {
+    height: 2.5vh;
+    width: 12vw;
+    margin: 1vw;
+    font-size: 1vw;
+    border-color: lightblue;
+}
+
+#instruction {
+    top: 10vh;
+    width: 44vw;
+    display: none;
+}
+
+#lable {
+    font-size: 1.5vw;
+}
+
+.lable {
+    font-size: 1.5vw;
+    color: #297D86;
+}
+
+legend {
+    font-size: 2.4vw;
+    color: #297D86;
+}
+
+#open {
+    display: none;
+}
+
+.solider {
+    top: 92vh;
+    left: 1vw;
+    height: 6vh;
+    width: 6vw;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
+#throw {
+    height: 6vw;
+    width: 6vw;
+    left: 78vw;
+    position: fixed;
+    top: 80vh;
+    background-size: cover;
+    background-image: url('pictures/s6.png');
+    border-radius: 8px;
+    display: none;
+}
+
+#title2 {
+    top: 6vh;
+    font-size: 4.5vw;
+}
+
+#warrp {
+    top: 20vh;
+    position: fixed;
+    left: 68vw;
+    border: solid 5px black;
+    display: none;
+    height: fit-content;
+}
+#winLose {
+    display: none;
+    z-index: 3;
+}

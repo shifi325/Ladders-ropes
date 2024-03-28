@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+    <title></title>
+</head>
+<body onload="check1()" class="home" id="home" onkeydown="steps(event)">
+    <audio controls="controls" id="up1">
+        <source id="source" src="1up.wav" />
+    </audio>
+    <audio controls="controls" id="down1">
+        <source id="source" src="throw.wav" />
+    </audio>
+    <audio controls="controls" id="move1">
+        <source id="source" src="step.mp3" />
+    </audio>
+    <audio controls="controls" id="turn1">
+        <source id="source" src="turn.mp3" />
+    </audio>
+    <audio controls="controls" id="win">
+        <source id="source" src="win.mp3" />
+    </audio>
+    <audio controls="controls" id="lose">
+        <source id="source" src="lose.mp3" />
+    </audio>
+    <div class="enterance" id="chooseGame">
+        <fieldset>
+            <legend>&laquo;	<b>בחר משחק</b> &raquo;</legend>
+            <button class="buttonE" id="prev" onclick="conGame()">המשך משחק קודם</button><br />
+            <button class="buttonE" onclick="startNew()">משחק חדש</button>
+            <br /><br />
+        </fieldset>
+    </div>
+    <div class="enterance" id="level">
+        <fieldset>
+            <legend>&laquo;	<b>בחר סוג משחק</b> &raquo;</legend>
+            <button class="buttonE" onclick="startE()">מהיר</button><br />
+            <button class="buttonE" onclick="start()">רגיל</button>
+            <br /><br />
+        </fieldset>
+    </div>
+    <div class="backg" id="d1">
+        <img class="solider" id="solider1" />
+        <img class="solider" id="solider2" />
+    </div>
+    <div class="enterance" id="open" style="opacity:1">
+        <audio controls="controls" id="audio">
+            <source id="source" src="play.m4a" />
+        </audio>
+        <fieldset>
+            <legend>&laquo;	<b>כניסה למשחק</b> &raquo;</legend>
+            <input name="name" id="text" type="text" required="required" autocomplete="on" dir="rtl" placeholder="הכנס שם שחקן" /><br />
+            <button class="buttonE" onclick="saveDetails()">אישור</button>
+            <br /><br />
+        </fieldset>
+    </div>
+    <div class="enterance" id="warrp">
+        <fieldset>
+            <legend>&laquo;	<b>סולמות וחבלים</b> &raquo;</legend>
+            <button class="buttonE" id="buttonE" onclick="open1()">התחל משחק</button><br />
+            <lable id="la1" class="lable"></lable>
+            <br /><br />
+            <lable id="la2" class="lable"></lable>
+            <br /><br />
+            <label id="la3" class="lable"></label>
+        </fieldset>
+    </div>
+    <div id="throw" onclick="startGame()">
+    </div>
+    <img id="menu" onclick="menuO()" src="pictures/menu.png" />
+    <div class="menu" id="mmenu">
+        <img id="menu" onclick="menuC()" src="pictures/menu2.png" />
+        <ul>
+            <li onclick="ask2()">שינוי סוג משחק</li>
+            <li> <a onclick="instruction1()">הוראות</a></li>
+            <li onclick="restart()">משחק חדש</li>
+        </ul>
+    </div>
+    <div class="enterance" id="ask1">
+        <fieldset>
+            <legend>&laquo;	<b>שינוי סוג משחק</b> &raquo;</legend>
+            <lable class="lable">?האם אתה בטוח שאתה רוצה לשנות את סוג המשחק</lable><br /><br />
+            <lable class="lable">במקרה ותבחר בכן המשחק יתחיל מחדש</lable><br /><br />
+            <button class="buttonE" onclick="change()">כן</button>
+            <button class="buttonE" onclick="no1()">לא</button>
+            <br /><br />
+        </fieldset>
+    </div>
+    <div class="enterance" id="winLose">
+        <fieldset>
+            <legend>&laquo;	<b id="b1">ניצחת</b> &raquo;</legend>
+            <lable id="lab1" class="lable"></lable><br /><br />
+            <button class="buttonE" onclick="restart()">משחק חדש</button>
+            <button data-link="../index.html" class="buttonE" onclick="back1(this)">חזרה לעמוד הבית</button>
+            <br /><br />
+        </fieldset>
+    </div>
+    <div class="enterance" id="instruction">
+        <fieldset>
+            <legend>&laquo;	<b>הוראות משחק</b> &raquo;</legend>
+            <lable id="lable">  .על מנת להתחיל במשחק השחקן יתבקש להטיל את הקוביה בכדי לקבוע מי הוא השחקן הראשון</lable><br />
+            <lable id="lable">  .השחקן בתורו יטיל את הקוביה ויצעד לפי מספר הצעדים הנתון על ידי שימוש המקשי החיצים שבמקלדת</lable><br />
+            <lable id="lable">בסיום התור על השחקן להקיש על מקש האישור במקלדת</lable>
+            <lable id="lable">  .בכדי שהתור יעבור למחשב המשחק מולו</lable><br />
+            <label id="lable"><strong>מטרת המשחק: </strong></label><br />
+            <lable id="lable">  .להגיע ראשון למשבצת הסיום-100 השחקן שיגע הראשון הוא המנצח ובכך יסתים המשחק</lable><br />
+            <button class="buttonE" onclick="continue1()">המשך למשחק</button>
+            <br /><br />
+        </fieldset>
+
+    </div>
+</body>
+</html>
